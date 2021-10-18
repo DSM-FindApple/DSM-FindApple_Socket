@@ -1,0 +1,35 @@
+{
+  "name": "dsm-findapple_socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSM-FindApple/DSM-FindApple_Socket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DSM-FindApple/DSM-FindApple_Socket/issues"
+  },
+  "homepage": "https://github.com/DSM-FindApple/DSM-FindApple_Socket#readme",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/mysql": "^2.15.19",
+    "@types/node": "^16.11.0",
+    "@types/sequelize": "^4.28.10",
+    "@types/socket.io": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.7.0",
+    "socket.io": "^4.3.0",
+    "tsconfig": "^7.0.0",
+    "uuid4": "^2.0.2"
+  }
+}
