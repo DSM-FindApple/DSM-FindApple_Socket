@@ -1,5 +1,6 @@
 import Sequelize, { Model } from "sequelize";
 import { sequelize } from "../config/config";
+import { FindImage } from "./findImage";
 
 export class Find extends Model {
   findId: number;
@@ -36,3 +37,7 @@ Find.init(
   },
   { sequelize, modelName: "find", tableName: "find" }
 );
+
+Find.hasMany(FindImage, { foreignKey: "findId", sourceKey: "findId" });
+FindImage.belongsTo(Find, { foreignKey: "findId" });
+
