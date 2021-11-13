@@ -6,7 +6,6 @@ import { ChatUser } from "./chatUser";
 export class Chat extends Model {
   id: number;
   title: string;
-  coverImg: string;
 }
 
 Chat.init(
