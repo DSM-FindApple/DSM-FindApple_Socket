@@ -2,7 +2,7 @@ import Sequelize, { Model } from "sequelize";
 import { sequelize } from "../config/config";
 
 export class ChatUser extends Model {
-  roomId: number;
+  chatUserId: number;
   userEmail: string;
 }
 
