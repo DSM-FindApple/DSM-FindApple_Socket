@@ -1,5 +1,7 @@
 import Sequelize, { Model } from "sequelize";
 import { sequelize } from "../config/config";
+import { Find } from "./find";
+import { Lost } from "./lost";
 
 export class Area extends Model {
   areaCode: number;
@@ -23,3 +25,9 @@ Area.init(
   },
   { sequelize, modelName: "area", tableName: "area" }
 );
+
+Area.hasOne(Lost, { foreignKey: "areaCode", sourceKey: "areaCode" });
+Lost.belongsTo(Area, { foreignKey: "areaCode" });
+
+Area.hasOne(Find, { foreignKey: "areaCode", sourceKey: "areaCode" });
+Find.belongsTo(Area, { foreignKey: "areaCode" });
